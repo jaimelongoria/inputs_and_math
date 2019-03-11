@@ -43,18 +43,46 @@ $("body").on("click", ".calculate", function (e) {
 		value = parseFloat(value);
 
 		pre_total = pre_total + value;
+
 	});
 
-	console.log("working!");
 	console.log(pre_total);
-
-
-
-
-
 
 });
 
-//HOMEWORK!!! 
+
+
+$("body").on("click", ".calculate", function (e) {
+	e.preventDefault();
+
+	let post_total = 0;
+
+	$(".post_total").each(function () {
+		const $this_post_total = $(this);
+		const $this_post_total_span = $this_post_total.find("span");
+
+		let value = $this_post_total_span.text();
+
+		value = parseFloat(value);
+
+		post_total = post_total + value;
+
+	});
+
+	console.log(post_total);
+
+});
+
+console.log("working!");
+
+
+
+
+
+
+
+
+
+//HOMEWORK!!!
 
 //total after tarriff add like before and also make them come out on the span tags
