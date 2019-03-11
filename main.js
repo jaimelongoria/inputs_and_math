@@ -44,10 +44,12 @@ $("body").on("click", ".calculate", function (e) {
 
 		pre_total = pre_total + value;
 
+		$("#pre_total").find("span").text(pre_total);
+
 	});
 
 	console.log(pre_total);
-
+	console.log("working!");
 });
 
 
@@ -67,13 +69,14 @@ $("body").on("click", ".calculate", function (e) {
 
 		post_total = post_total + value;
 
+		$("#post_total").find("span").text(post_total);
+
+
 	});
 
 	console.log(post_total);
-
+	console.log("working!");
 });
-
-console.log("working!");
 
 
 
